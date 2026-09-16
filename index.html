@@ -341,8 +341,17 @@
     nav.anchors{display:none;}
     .header-cta .btn span.long{display:none;}
     .header-cta .btn span.short{display:inline;}
-    .hero-media{min-height:440px;}
-    .hero-copy{padding:40px 0 36px;}
+    .hero-media{display:flex;flex-direction:column;min-height:0;align-items:stretch;}
+    .hero-media>.wrap{order:1;}
+    .hero-scrim{display:none;}
+    .hero-bg{position:static;order:2;height:auto;aspect-ratio:4/5;}
+    .hero-copy{padding:28px 0 32px;color:var(--ink);}
+    .hero-copy .eyebrow-label{color:var(--brass-deep);}
+    .hero-copy h1{color:var(--ink);}
+    .hero-copy .lede{color:var(--ink-soft);}
+    .hero-copy .hero-cue{color:var(--ink-soft);}
+    .btn-hero{background:var(--brass);border-color:var(--brass);color:var(--whatsapp-fg);}
+    .btn-hero:hover{background:var(--brass-deep);border-color:var(--brass-deep);}
     .trust-grid{grid-template-columns:1fr;}
     .footer-grid{grid-template-columns:1fr;gap:26px;}
     .footer-bottom{flex-direction:column;}
